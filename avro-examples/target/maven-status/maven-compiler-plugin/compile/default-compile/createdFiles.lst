@@ -1,0 +1,7 @@
+com/crazynerve/util/SchemaGenerator.class
+com/crazynerve/models/Sex.class
+com/crazynerve/models/Person.class
+com/crazynerve/models/Address$Builder.class
+com/crazynerve/models/Address.class
+com/crazynerve/App.class
+com/crazynerve/models/Person$Builder.class

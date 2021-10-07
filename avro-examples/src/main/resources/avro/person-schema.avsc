@@ -1,0 +1,40 @@
+{
+  "type" : "record",
+  "name" : "Person",
+  "namespace" : "com.crazynerve.models",
+  "fields" : [ {
+    "name" : "name",
+    "type" : "string"
+  }, {
+    "name" : "age",
+    "type" : "int"
+  }, {
+    "name" : "address",
+    "type" : {
+      "type" : "record",
+      "name" : "Address",
+      "fields" : [ {
+        "name" : "street",
+        "type" : [ "null", "string" ],
+        "default" : null
+      }, {
+        "name" : "zipcode",
+        "type" : [ "null", "string" ],
+        "default" : null
+      } ]
+    }
+  }, {
+    "name" : "phoneNumbers",
+    "type" : {
+      "type" : "array",
+      "items" : "string"
+    }
+  }, {
+    "name" : "sex",
+    "type" : {
+      "type" : "enum",
+      "name" : "Sex",
+      "symbols" : [ "MALE", "FEMALE" ]
+    }
+  } ]
+}
